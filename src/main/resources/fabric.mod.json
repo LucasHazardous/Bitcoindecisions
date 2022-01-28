@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "bitcoindecisions",
+  "version": "${version}",
+  "name": "Bitcoindecisions",
+  "description": "",
+  "authors": [
+    "LucasHazardous"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bitcoindecisions/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "lucas.hazardous.bitcoindecisions.client.BitcoindecisionsClient"
+    ],
+    "main": [
+      "lucas.hazardous.bitcoindecisions.Bitcoindecisions"
+    ]
+  },
+  "mixins": [
+    "bitcoindecisions.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
